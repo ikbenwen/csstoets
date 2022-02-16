@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 15px;
+    color: white;
+    background-color: black;
+}
+
+#container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*-----header groot--------*/
+#menu{
+    display: none;
+}
+
+#smallScreenNav{
+    display: none;
+}
+
+header{
+    background-image: url("../Afbeeldingen/header-image-xl.jpg");
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 3%;
+}
+
+#logo{
+    position: relative;
+    top: 2px;
+    left: 6%;
+    width: 14%;
+}
+
+h1{
+    padding-top: 7%;
+    padding-left: 7%;
+    font-size: 5em;
+    line-height: 100%;
+}
+
+/*-----navigatie groot-----*/
+#nav-bar{
+    width: 30%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-left: 64%;
+    margin-top: 10px;
+    position: relative;
+    top: -150px;
+    left: 0;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0;
+}
+
+li{
+    margin-left: 3%;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+    padding: 5% 0 3% 0;
+}
+
+li a:hover{
+    color: #0A742B;
+}
+
+
+/*------main groot------*/
+main{
+    background-image: linear-gradient(#2C0C27, #7A063B);
+    display: flex;
+    justify-content: center;
+    padding: 8% 0;
+}
+
+main div{
+    width: 25%;
+    height: 80%;
+    margin-left: 2%;
+    background-image: linear-gradient(#5E1F46, #7D1E4D);
+    padding-bottom: 2%;
+}
+
+main div img{
+    width: 100%;
+}
+
+h2{
+    font-size: 1.5em;
+    padding: 6% 3%;
+}
+
+p {
+    /*font-family: 'Lato', sans-serif;*/
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 1.5em;
+    padding: 0 5% 6% 3%;
+}
+
+button {
+    margin-left: 3%;
+    background-color: white;
+    border: none;
+    color: black;
+    padding: 4px 9px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+}
+
+button:hover{
+    background-color: #DDC7D1;
+}
+
+/*-----Tabel festivals.html-------*/
+table, td{
+    border: 0.5px solid white;
+    border-collapse: collapse;
+    padding: 3px 5px;
+}
+
+tr:nth-of-type(1){
+    border: 3px solid green;
+}
+th{
+    color: #2C0C27;
+    background-color: white;
+}
+th:nth-of-type(2){
+    background-color: #EEFFED;
+}
+
+th:nth-of-type(3){
+    background-color: #DDFFDC;
+}
+
+/*-------Contact form------*/
+#form-container{
+    width: 37%;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+h4{
+    padding-bottom: 10px;
+}
+
+label{
+    padding: 2px 3% 0 0;
+}
+
+input[type=text]{
+    margin: 5px 0 0 0;
+    padding: 5px 4px;
+    width: 65%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+input:focus{
+    outline: none;
+    background-color: #e0b1c7;
+}
+
+input[type='radio']:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #D84282;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+#form-container p{
+    padding: 10px 3% 0 0;
+    position: absolute;
+}
+
+#form-container ul{
+    flex-direction: column;
+    padding: 10px 0 5px 0;
+    position: relative;
+    top: 2px;
+    left: 79px;
+}
+
+select{
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+input[type=submit] {
+    margin-top: 34px;
+    width: 28%;
+    padding: 5px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #7D1E4D;
+    background-color: white;
+    border: 2px solid #7D1E4D;
+    font-weight: bold;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type=submit]:hover{
+    background-color: #e0b1c7;
+}
+
+/*----- footer groot------*/
+footer{
+    background-image: url("/Afbeeldingen/footer-background-tile.jpg");
+    display: flex;
+}
+
+#image-boy{
+    position: relative;
+    top: -60px;
+    left: 1px;
+    z-index: 10;
+}
+
+#image-spray{
+    position: relative;
+    top: 0;
+    left: -110px;
+    width: 60%;
+    height: 50%;
+}
+
+#contact-footer{
+    position: relative;
+    top: 100px;
+    left: -500px;
+    line-height: 2em;
+    font-size: 1em;
+    white-space: nowrap;
+}
+
+h3{
+    padding-left: 3%;
+}
+
+#email:hover{
+    color: #0A742B;
+}
+
+#black-footer{
+    padding: 57px 50%;
+    height: 50px;
+    position: relative;
+    top: 392px;
+    left: -1320px;
+    background-color: black;
+    z-index: 9;
+}
+
+/*-----middelgroot scherm-----*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    #container{
+        width: 768px;
+    }
+    /*-----middel header*/
+    #logo{
+        left: 3%;
+    }
+
+    h1{
+        font-size: 3em;
+    }
+    /*-----middel navigatie-----*/
+    #nav-bar{
+        top: -100px;
+        left: -106px;
+        width: 45%;
+        display: block;
+    }
+
+    /*-----middel main-----*/
+    #form-container {
+        width: 50%;
+    }
+
+    main{
+        flex-wrap: wrap;
+    }
+
+    main div{
+        width: 40%;
+        margin-top: 20px;
+    }
+
+    main div:nth-of-type(3){
+        width: 82%;
+    }
+    /*-----middel footer-----*/
+    #contact-footer{
+        left: -340px;
+    }
+
+    #black-footer{
+        left: -1060px;
+    }
+
+    #image-spray{
+        top: 96px;
+    }
+}
+
+/*-----klein scherm-----*/
+@media screen and (max-width: 768px) {
+
+    #container{
+        width: 500px;
+    }
+
+    /*-----header klein-------------*/
+    header{
+        width: 100%;
+        left: -100px;
+        top: 200px;
+        padding-top: 0;
+    }
+
+    #logo{
+        width: 35%;
+    }
+
+    /*--------hamburger---------*/
+    #menu {
+        display: block;
+        background: white;
+        border-radius: 4px;
+        height: 10px;
+        width:80px;
+        margin:20px;
+        position: relative;
+        top: -168px;
+        left: 378px;
+    }
+
+    #menu:before {
+        display: block;
+        background: white;
+        border-radius: 4px;
+        content: '';
+        height: 10px;
+        width: 80px;
+        position: absolute;
+        top: 38px;
+    }
+
+    #menu:after {
+        display: block;
+        background: white;
+        border-radius: 4px;
+        content: '';
+        height: 10px;
+        width: 80px;
+        position: absolute;
+        top: 20px;
+    }
+
+    /*-----navigatie klein-------*/
+    #nav-bar{
+        display: none;
+    }
+    #smallScreenNav{
+        display: block;
+        position: absolute;
+    }
+
+    #small-nav-bar{
+        width: 140px;
+        background-color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        left: 300%;
+        top: -95px;
+        display: block;
+    }
+
+    nav #small-myLinks {
+        display: none;
+    }
+
+    #small-nav-bar ul {
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        position: relative;
+    }
+
+    li a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    h1{
+        font-size: 2em;
+    }
+
+    /*-----main klein-----*/
+    main{
+        flex-wrap: wrap;
+        padding: 20px 0 20px 0;
+    }
+
+    #form-container {
+        width: 80%;
+    }
+
+    main div{
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    #main-midden{
+        display: none;
+    }
+
+    iframe{
+        margin-top: 10px;
+    }
+
+    h2{
+        font-size: 2.3em;
+    }
+
+    main p{
+        font-size: 1.3em;
+    }
+
+    button{
+        font-size: 1.3em;
+    }
+
+    /*-----footer klein-----*/
+    footer{
+        padding: 68px;
+    }
+
+    #image-boy{
+        display: none;
+    }
+
+    #image-spray{
+        top:10px;
+        left: -300px;
+        width: auto;
+        height: auto;
+    }
+
+    #contact-footer{
+        font-size: 1.5em;
+        top: 10px;
+        left: -760px;
+    }
+
+    #black-footer{
+        display: none;
+    }
+}
+

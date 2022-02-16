@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS Toets - Street Art </title>
+</head>
+<body>
+<div id="container">
+    <header>
+        <img id="logo" src="Afbeeldingen/logo-xl.png" alt="logo">
+
+        <div id="smallScreenNav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div id="menu"></div>
+            </a>
+            <div id="small-nav-bar">
+                <nav>
+                    <ul id="small-myLinks">
+                        <li><a href="index.html">ARTISTS</a></li>
+                        <li><a href="artform.html">ART FORM</a></li>
+                        <li><a href="festivals.html">FESTIVALS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="nav-bar">
+            <nav>
+                <ul id="myLinks">
+                    <li><a href="index.html">ARTISTS</a></li>
+                    <li><a href="artform.html">ART FORM</a></li>
+                    <li><a href="festivals.html">FESTIVALS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Street art <br>changing the world</h1>
+    </header>
+
+    <main>
+        <table>
+            <tr>
+                <th colspan="2">Location</th>
+                <th>Date</th>
+                <th>Event</th>
+            </tr>
+            <tr>
+                <td rowspan="2">London</td>
+                <td rowspan="2">UK</td>
+                <td>26 - 28 May</td>
+                <td>Meeting of Styles</td>
+            </tr>
+            <tr>
+                <td>1-9 June</td>
+                <td>Brockley Street Art Festival</td>
+            </tr>
+            <tr>
+                <td>Fanzara</td>
+                <td>Spain</td>
+                <td>5-8 july</td>
+                <td>M.I.A.U.</td>
+            </tr>
+            <tr>
+                <td>Chemnitz</td>
+                <td>Germany</td>
+                <td>24-26 august</td>
+                <td>iBug</td>
+            </tr>
+            <tr>
+                <td>Stavanger</td>
+                <td>Norway</td>
+                <td>6-9 September</td>
+                <td>Nuart Festival</td>
+            </tr>
+            <tr>
+                <td>Eindhoven</td>
+                <td>Netherlands</td>
+                <td>10-117 November</td>
+                <td>GLOW</td>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <img id="image-boy" src="Afbeeldingen/footer-boy-xl.png" alt="boy">
+        <img id="image-spray" src="Afbeeldingen/spray.png" alt="spray">
+        <div id="contact-footer">
+            <h3>HOW TO FIND US</h3>
+            <p>Raw Art <br>95A Rivington St <br>London EC2A 3AY</p>
+            <br>
+            <p>+44 7708 323731</p>
+            <br>
+            <p id="email">info@rawart.com</p>
+        </div>
+        <div id="black-footer"></div>
+    </footer>
+</div>
+
+<script>
+    function myFunction() {
+        let x = document.getElementById("small-myLinks");
+        console.log("hoi");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>

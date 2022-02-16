@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS Toets - Street Art </title>
+</head>
+<body>
+<div id="container">
+    <header>
+        <img id="logo" src="Afbeeldingen/logo-xl.png" alt="logo">
+
+        <div id="smallScreenNav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div id="menu"></div>
+            </a>
+            <div id="small-nav-bar">
+                <nav>
+                    <ul id="small-myLinks">
+                        <li><a href="index.html">ARTISTS</a></li>
+                        <li><a href="artform.html">ART FORM</a></li>
+                        <li><a href="festivals.html">FESTIVALS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="nav-bar">
+            <nav>
+                <ul id="myLinks">
+                    <li><a href="index.html">ARTISTS</a></li>
+                    <li><a href="artform.html">ART FORM</a></li>
+                    <li><a href="festivals.html">FESTIVALS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Street art <br>changing the world</h1>
+    </header>
+
+    <main>
+        <div id="form-container">
+
+            <h4>Contact Form</h4>
+
+            <form action="#">
+                <label id="firstname">First Name: </label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name...">
+                <br>
+                <label id="lastname">Last Name: </label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+                <br>
+
+                <p>Gender: </p>
+                <ul>
+                    <li>
+                        <input type="radio" id="female" name="gender">
+                        <label for="female">Female</label>
+                    </li>
+
+                    <li>
+                        <input type="radio" id="male" name="gender">
+                        <label for="male">Male</label>
+                    </li>
+                </ul>
+
+                <label id="nationality">Nationality: </label>
+                <select id="country" name="country">
+                    <option value="dutch">Dutch</option>
+                    <option value="norwegian">Norwegian</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="german">German</option>
+                    <option value="englisch">English</option>
+                </select>
+                <br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <img id="image-boy" src="Afbeeldingen/footer-boy-xl.png" alt="boy">
+        <img id="image-spray" src="Afbeeldingen/spray.png" alt="spray">
+        <div id="contact-footer">
+            <h3>HOW TO FIND US</h3>
+            <p>Raw Art <br>95A Rivington St <br>London EC2A 3AY</p>
+            <br>
+            <p>+44 7708 323731</p>
+            <br>
+            <p id="email">info@rawart.com</p>
+        </div>
+        <div id="black-footer"></div>
+    </footer>
+</div>
+
+<script>
+    function myFunction() {
+        let x = document.getElementById("small-myLinks");
+        console.log("hoi");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>

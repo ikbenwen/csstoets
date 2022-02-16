@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS Toets - Street Art </title>
+</head>
+<body>
+<div id="container">
+    <header>
+        <img id="logo" src="Afbeeldingen/logo-xl.png" alt="logo">
+
+        <div id="smallScreenNav">
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <div id="menu"></div>
+            </a>
+            <div id="small-nav-bar">
+                <nav>
+                    <ul id="small-myLinks">
+                        <li><a href="index.html">ARTISTS</a></li>
+                        <li><a href="artform.html">ART FORM</a></li>
+                        <li><a href="festivals.html">FESTIVALS</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div id="nav-bar">
+            <nav>
+                <ul id="myLinks">
+                    <li><a href="index.html">ARTISTS</a></li>
+                    <li><a href="artform.html">ART FORM</a></li>
+                    <li><a href="festivals.html">FESTIVALS</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Street art <br>changing the world</h1>
+    </header>
+
+    <main>
+        <div id="main-links">
+            <img src="Afbeeldingen/article1-image-xl.jpg" alt="artist of the month">
+            <h2>ARTIST OF THE MONTH</h2>
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.
+            </p>
+            <a href="readMore.html"><button type="button">read more</button></a>
+        </div>
+        <div id="main-midden">
+            <img src="Afbeeldingen/article2-image-xl.jpg" alt="stencil art">
+            <h2>STENCIL ART</h2>
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.
+            </p>
+            <a href="readMore.html"><button type="button">read more</button></a>
+        </div>
+        <div id="main-rechts">
+            <img src="Afbeeldingen/article3-image-xl.jpg" alt="Man with spray-paint">
+            <h2>STREET ART FESTIVAL</h2>
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt
+                ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in
+                voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur.
+            </p>
+            <a href="readMore.html"><button type="button">read more</button></a>
+        </div>
+    </main>
+    <footer>
+        <img id="image-boy" src="Afbeeldingen/footer-boy-xl.png" alt="boy">
+        <img id="image-spray" src="Afbeeldingen/spray.png" alt="spray">
+        <div id="contact-footer">
+            <h3>HOW TO FIND US</h3>
+            <p>Raw Art <br>95A Rivington St <br>London EC2A 3AY</p>
+            <br>
+            <p>+44 7708 323731</p>
+            <br>
+            <p id="email">info@rawart.com</p>
+        </div>
+        <div id="black-footer"></div>
+    </footer>
+</div>
+
+<script>
+    function myFunction() {
+        let x = document.getElementById("small-myLinks");
+        console.log("hoi");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>
